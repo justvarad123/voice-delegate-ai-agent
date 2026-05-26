@@ -1,0 +1,6 @@
+{
+  "name": "Voice Delegate AI Agent",
+  "description": "Check Google Calendar meetings, train a custom voice clone profile and Q&A knowledge base, delegate the AI to auto-join calls and speak on your behalf, and get detailed meeting notes and assigned tasks.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
