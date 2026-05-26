@@ -8,13 +8,13 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 
 // Initialize Gemini SDK with User-Agent header for telemetry as advised in the skill
 const ai = new GoogleGenAI({
-  apiKey: process.env.GEMINI_API_KEY,
+  apiKey: os.environ.get("GEMINI_API_KEY"),
   httpOptions: {
     headers: {
       "User-Agent": "aistudio-build",
