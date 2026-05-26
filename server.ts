@@ -15,7 +15,7 @@ app.use(express.json());
 
 // Initialize Gemini SDK with User-Agent header for telemetry as advised in the skill
 const ai = new GoogleGenAI({
-  apiKey: os.environ.get("GEMINI_API_KEY"),
+  apiKey: process.env.GEMINI_API_KEY,
   httpOptions: {
     headers: {
       "User-Agent": "aistudio-build",
